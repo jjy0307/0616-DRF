@@ -1,9 +1,11 @@
 from django.contrib import admin
-from django.urls import path, include
-from . import views
+from django.urls import path
+from user import views
 
-# user/
+
 urlpatterns = [
     path('login/', views.UserApiView.as_view()),
+    path('logout/', views.UserApiView.as_view()),
     path('', views.UserView.as_view()),
+    path('<obj_id>/', views.UserView.as_view())
 ]

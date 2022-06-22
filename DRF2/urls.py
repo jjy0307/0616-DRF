@@ -1,5 +1,4 @@
-"""DRF2 URL Configuration
-
+"""drf2 URL Configuration
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
 Examples:
@@ -20,4 +19,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/', include('user.urls')),
     path('blog/', include('blog.urls')),
+    path('product/', include('product.urls')),
 ]
